@@ -11,7 +11,7 @@ export const PostsProvider = ({children}) =>{
   const value = {
     state: {posts:posts},
     actions: {setPosts: setPosts},
-    fetecth: {isUpdate: isUpdate, setIsUpdate:setIsUpdate},
+    refetch: {isUpdate: isUpdate, setIsUpdate:setIsUpdate},
     error: {error:error},
     loading: {loading:loading}
   }

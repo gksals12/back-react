@@ -8,6 +8,7 @@ import Layout from "../pages/layout/Layout";
 import NotFound from "../pages/notFound/NotFound";
 import PostContainer from "../pages/post/PostContainer";
 import PostContextList from "../pages/post/list/PostContextList";
+import PostContextRead from "../pages/post/read/PostContextRead";
 
 const router = createBrowserRouter([
   
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
       {
         path: "/community",
         element: <PostContextList />
+      },
+      {
+        path: "/community/read/:postId",
+        element: <PostContextRead />
       }
     ]
   }

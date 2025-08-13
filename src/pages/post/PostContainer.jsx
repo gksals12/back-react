@@ -1,12 +1,15 @@
 import React, { useContext } from 'react';
-import { PostsContext } from '../../context/PostsContext';
+import { PostsProvider } from '../../context/PostsContext';
+import { Outlet } from 'react-router-dom';
 
 const PostContainer = () => {
-  console.log(useContext(PostsContext))
   return (
-    <div>
-      배너
-    </div>
+     <PostsProvider>
+      <div>배너</div>
+      <Outlet context={"name: 홍길동"}>
+
+      </Outlet>
+    </PostsProvider>
   );
 };
 
