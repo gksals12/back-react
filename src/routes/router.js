@@ -9,6 +9,7 @@ import NotFound from "../pages/notFound/NotFound";
 import PostContainer from "../pages/post/PostContainer";
 import PostContextList from "../pages/post/list/PostContextList";
 import PostContextRead from "../pages/post/read/PostContextRead";
+import SignUp from "../pages/signUp/SignUp";
 
 const router = createBrowserRouter([
   
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
   }
   
     ]
+  },
+  {
+    path: "/sign-up",
+    element: <SignUp />
   },
   {
     // 경로가 잘 못되었을때
